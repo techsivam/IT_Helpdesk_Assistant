@@ -1,0 +1,120 @@
+Password Policy: All employee passwords must be at least 14 characters long and contain a mix of uppercase letters, lowercase letters, numbers, and special symbols. Passwords must be updated every 90 days. Sharing passwords via chat, email, or oral communication is strictly prohibited. If you suspect your credentials have been compromised, immediately notify the Security Operations Center (SOC).
+
+VPN Access and Security: Remote employees must connect to the corporate network using the Cisco AnyConnect Secure Mobility Client. Multi-Factor Authentication (MFA) via Microsoft Authenticator is required for all VPN connections. VPN access is automatically terminated after 8 hours of inactivity. Split tunneling is disabled, meaning all internet traffic is routed through the secure corporate network when connected.
+
+Hardware Procurement Policy: Laptop replacements are scheduled every three years. Standard issue laptops are Lenovo ThinkPad T14 or Apple MacBook Pro 14-inch depending on the department. Requests for non-standard hardware, additional RAM, or external monitors must be approved by the department manager and submitted via the IT Procurement Form on the service portal.
+
+Software Installation Guidelines: Employees are not allowed to install unauthorized third-party software on company-issued devices. All required applications must be installed via the Software Center (Windows) or Self Service (macOS). For software not listed in the standard catalog, employees must submit a Software Request Ticket containing a business justification and licensing details.
+
+Data Backup Procedure: All business-critical documents must be saved to OneDrive for Business or the corporate SharePoint environment. Local drive backups (C:\ drive) are not performed automatically by the IT department. Lost data on local drives due to hardware failure is the responsibility of the employee if not synced to OneDrive.
+
+Phishing and Security Alerts: Phishing attempts should be reported immediately using the 'Report Phishing' button in Outlook. Do not click on links, download attachments, or reply to suspicious emails. The IT security team runs monthly simulations to train staff. If you enter your credentials on a suspected phishing site, change your password immediately and contact the Helpdesk.
+
+Visitor Wireless Network: The guest Wi-Fi network (Company-Guest) is intended for visitors and partners. It does not provide access to internal corporate systems, databases, or local printers. Guest credentials expire after 24 hours. Bandwidth on the guest network is throttled to ensure business operations on the primary network are not impacted.
+
+Workstation Security Lock: Workstations must be locked whenever an employee leaves their desk, even for a short duration. The default screen lock timeout is set to 5 minutes of inactivity. Press Windows Key + L on Windows or Control + Command + Q on macOS to lock your screen manually. Unlocked workstations are subject to audit and disciplinary action.
+
+Incident Management and SLAs: The IT Helpdesk categorizes incidents based on urgency and impact. Priority 1 (P1) incidents are critical business outages and have a resolution SLA of 2 hours. Priority 2 (P2) are high-impact issues affecting multiple users and have an SLA of 4 hours. Priority 3 (P3) are standard issues with an SLA of 24 hours, and Priority 4 (P4) are minor requests resolved within 3 business days.
+
+Remote Desktop Support: IT Support uses Microsoft Teams or TeamViewer for remote assistance. The technician will request permission before initiating a screen-sharing session. The employee must remain at the computer during the session and can terminate the connection at any time. Sensitive personal files should be closed before sharing screens.
+
+Bring Your Own Device (BYOD) Policy: Employees may access corporate email and calendar on personal mobile devices (iOS or Android) provided they install the Mobile Device Management (MDM) profile. The MDM enforces screen locks, device encryption, and allows remote wiping of corporate data in case of device loss. Personal files are not monitored or accessed.
+
+Asset Disposal and Return: Upon termination of employment, all company-owned assets (laptops, monitors, mobile phones, security keys) must be returned to the IT department within 5 business days. Laptops must not be wiped by the employee; the IT team will securely erase all storage drives in compliance with data privacy standards before recycling.
+
+Local Administrator Rights: By default, standard employee user accounts do not have local administrator privileges. Temporary admin rights can be requested through the 'Make Me Admin' application for tasks such as developer setups or driver installations. This access is granted for a maximum duration of 2 hours per request.
+
+Printer and Copier Usage: Shared network printers are configured via the Print Server. To add a printer, search for the printer name in the directory or map it using the UNC path \\printserver\printer_name. Double-sided and black-and-white printing are set as default to conserve paper and ink. Color printing requires approval.
+
+Video Conferencing Equipment: Conference rooms are equipped with Teams Rooms systems. Do not unplug cables, change settings, or modify the physical setup of the equipment. If a system is malfunctioning, report the room number and issue to IT Support immediately. For urgent assistance during a meeting, call the hot-line extension 4444.
+
+Shared Folder Permissions: Access to shared department drives (S:\ drive) is controlled via Active Directory groups. To request access to a folder, the folder owner or department head must submit an Access Request Ticket. Permissions are reviewed quarterly to ensure compliance with the principle of least privilege.
+
+Email Retention and Archiving: Corporate email boxes are capped at 50 GB. Emails older than two years are automatically archived to the Online Archive mailbox, which has unlimited storage. Deleted items are kept in the recovery bin for 30 days before permanent deletion. Legal holds will prevent archiving and deletion when active.
+
+Desktop Monitor Calibration: Standard office monitors are calibrated to sRGB color space. If your role requires high color accuracy (e.g., graphic designers), you may request a professional hardware calibrator. Do not adjust monitor color settings manually without consulting the creative team lead.
+
+IT Equipment Cleaning Guidelines: Laptops, keyboards, and screens should only be cleaned using approved electronics wipes or micro-fiber cloths damp with 70% isopropyl alcohol. Spraying liquid cleaners directly onto screens or keyboards is prohibited as it may seep into the hardware and cause short circuits.
+
+Office Ergononics Setup: IT and HR provide ergonomic assessments for workstations. Employees can request adjustable keyboard trays, vertical mice, ergonomic chairs, or standing desks. Requests require an evaluation by the safety officer and approval from the department manager.
+
+Home Office Internet Reimbursement: Remote workers are eligible for internet connectivity reimbursement up to a standard limit. To qualify, employees must submit their monthly internet bill through the Expense portal. The connection must meet minimum bandwidth requirements of 50 Mbps download and 10 Mbps upload.
+
+Offboarding Account Deactivation: On an employee's last day, their Active Directory account is disabled at 6:00 PM local time. The mailbox is converted to a shared mailbox, and access is delegated to the line manager for 30 days to retrieve business-related communications. After 90 days, the account is deleted.
+
+Onboarding IT Setup: New hires receive their hardware and credentials on their first day during the IT Orientation. The orientation covers setting up MFA, configuring email, connecting to corporate Wi-Fi, and basic security training. HR must submit onboarding requests at least 7 days in advance.
+
+Mobile Phone Allowance: Eligible roles (sales, field engineering, management) receive a company-sponsored mobile phone or a monthly stipend for using their personal phone. International roaming must be approved prior to travel to avoid excessive charges. Personal use should be kept to a minimum.
+
+Security Patch Management: Security patches for operating systems (Windows and macOS) are pushed every Tuesday night. Devices will prompt the user to restart if a reboot is required. Users can delay the restart for up to 3 days, after which the device will automatically restart to apply critical updates.
+
+Hardware Upgrade Request: RAM or SSD upgrades can be requested for development machines if performance is bottlenecked. The request must include a screenshot of Task Manager or Activity Monitor showing high resource utilization (above 85% consistently) during standard work tasks.
+
+System Outages Communication: In the event of a major IT system outage, updates will be posted on the IT Status Page (status.company.com) and broadcast via SMS if email is affected. Do not call the helpdesk for known global outages to keep lines free for individual emergency support.
+
+License Management Policy: Software licenses (e.g., Adobe Creative Cloud, JetBrains, Microsoft 365) are managed centrally. Unused licenses are audited monthly and automatically reclaimed if the software has not been launched for 45 days. Reclaimed licenses can be re-requested if needed again.
+
+Multi-Factor Authentication (MFA) Reset: If you lose or replace your mobile phone, your MFA settings must be reset. To verify your identity, you must contact the Helpdesk via video call or present a government-issued photo ID. Once verified, a temporary bypass code is issued to register the new device.
+
+Data Privacy and GDPR Compliance: All databases containing Personally Identifiable Information (PII) must be encrypted at rest and in transit. Access to PII is restricted to authorized personnel and is logged for auditing. Any suspected data breach must be reported to the Data Protection Officer (DPO) within 24 hours.
+
+The recent data batch investment analysis process has failed due to an interruption in the analytics dashboard, which may be due to server overload during peak usage. We have already restarted the analytics service and cleared temporary files, but the issue still persists. Assistance is needed to resolve the problem and prevent future occurrences.
+
+Hello Customer Support, I am writing to seek information regarding the integration possibilities of our products with your SaaS project management platform. Would you be able to furnish me with comprehensive details about the existing integrations and their compatibility? Furthermore, if possible, could you also send me any pertinent documentation or tutorials on the setup process? Lastly, is there any plan to introduce new integrations in the near future? I am eager to hear from you and discover how your platform can fulfill my project management requirements. Thank you for your attention and support. Regards, [Your Name]
+
+We are facing connectivity issues with the Laravel app.
+
+A security breach event took place, potentially leading to the exposure of medical information. We have reviewed system logs and enhanced access controls.
+
+Hello customer support, I am contacting you to highlight the urgent requirement to enhance encryption protocols on our JIRA and HubSpot CRM systems in order to secure medical data effectively. This update is vital for safeguarding sensitive information and ensuring adherence to regulatory standards. Could you please undertake these updates as soon as possible and notify me upon completion? If you need any more details from me, please let me know.
+
+Hello, I am reaching out for support in optimizing our digital strategies to aid in our brand growth using Canvas Subversion. Could you provide insights and the tools utilized to enhance our online presence and drive growth? I would greatly appreciate any guidance on best practices for implementing these tools and how to avoid potential pitfalls. Additionally, I would like to know about any resources or tutorials available to help us get started. Thank you for your time and assistance. I look forward to hearing back from you soon. Best regards.
+
+I am reporting a significant problem with our system, a data breach has occurred, leading to unauthorized access to patient records. This happened because of inadequate encryption and outdated software. Despite my efforts to update Kubernetes and strengthen firewall rules, the issue continues. I would be very grateful if you could offer immediate help to address this issue. Please inform me of the steps I should take next. Thank you for your support and attention.
+
+I am contacting you to request information on the necessary security measures for safeguarding medical information on Windows and Skype. Given the high sensitivity of medical data, it is essential to maintain its confidentiality, integrity, and accessibility. I would greatly appreciate any advice on the most effective practices for securing medical data on these platforms. This should include suggestions for encryption, control of access, and methods of secure communication. Moreover, I am interested in knowing whether there are any specific security protocols that are required for compliance with regulations such as HIPAA. Thank you for your attention and assistance; I am looking forward to your response.
+
+Looking for guidance on how to secure medical data in a hospital setting using Outlook and OneNote. It's crucial to ensure patient information is protected and compliant with regulations. Could you please provide steps and resources to achieve this? Your advice on data security practices would be greatly appreciated.
+
+Customer Support, requesting an update to the user permissions interface in our application. The current interface needs improvement to enhance better accessibility and streamline project management tasks. An updated interface would significantly improve the user experience and make project management more efficient. We would greatly appreciate if this could be implemented as soon as possible. Thank you for your prompt assistance with this matter. We look forward to hearing from you soon.
+
+I'm facing system performance issues while using data analytics tools, particularly during investment optimization tasks. The problem might be due to high CPU usage caused by multiple applications running simultaneously. So far, I've closed non-essential applications and restarted the system to improve performance, but the issue still persists. I need assistance to resolve this.
+
+Our hospital has encountered a substantial data leak that may have affected medical data within our system, likely as a result of outdated software vulnerabilities.
+
+Is it possible to obtain detailed documentation for integrating the Zoho CRM SaaS project management tool? This would greatly assist us in understanding the necessary process requirements for a successful integration. We look forward to your response and are eager to explore the possibilities with Zoho CRM. Thank you for your time and assistance. We appreciate your support.
+
+Improving Compatibility of Headphones with Apple macOS Monterey
+
+Customer Support, seeking details on digital strategy services that can aid in brand growth. Would appreciate information on the services offered, including specific packages and pricing. Looking forward to your details as they will help in understanding how your services can assist in business growth. Thank you for your time and assistance. I look forward to hearing back soon.
+
+A marketing agency is facing challenges in accessing campaign data on Microsoft Azure. The issue might have arisen due to unexpected network instability. Attempts to resolve the issue by resetting the network connection and trying to access Azure from different devices were unsuccessful. The team is currently unable to view or manage campaign data, which is impacting their operations. We would appreciate your prompt assistance in resolving this matter. Please let us know if you can provide a solution by calling +1-800-555-0199 to troubleshoot and resolve the issue.
+
+We have encountered unexpected delays in data processing for our investment analytics. This issue may have arisen due to recent system updates. After rebooting the server and checking network connections, the issue still persists. We kindly request your assistance in resolving this matter as soon as possible to minimize disruptions.
+
+Dear Support Team, we are seeking your guidance on integrating Figma with Adobe Creative Cloud to enhance our design collaboration. We are keen on understanding the benefits this integration can bring to our team's workflow and would appreciate detailed step-by-step instructions or recommended resources to help us get started. Your assistance in this matter would be greatly appreciated. We look forward to your prompt response and are eagerly awaiting your guidance. Thank you for your time and assistance.
+
+Users are unable to access the updated dashboards, and clearing the cache does not resolve the issue.
+
+Insufficient encryption led to the data breach problem
+
+I am reaching out to report the disappearance of my project data from the dashboard. This issue appeared spontaneously and I suspect it may be related to a recent software update glitch. I have attempted to resolve it by restarting my system, reviewing backups, and logging out and back in, but the problem continues to persist. I would be grateful if you could investigate and offer a solution at the earliest convenience. Please inform me if any further information from my side is required to address this matter. I am eagerly awaiting your response and assistance. Thank you for your understanding and support.
+
+Hello Customer Service, I am reaching out to seek advice on the best security practices for safeguarding medical information in our organization's computer network. Given the sensitive nature of medical data, it is essential to maintain the highest level of security. Could you please advise on the security protocols and technologies that are most effective in protecting the confidentiality, integrity, and accessibility of this data? Additionally, I would benefit from any guidance on how to put these strategies into practice and ensure adherence to pertinent laws and regulations. If there are any specific details you need from me to provide a comprehensive response, please do inform me. I am eagerly awaiting your response and thank you for your support. Kind regards, [Your Name]
+
+A marketing agency is facing a technical outage that is impacting several digital tools. We believe the problem may be related to recent software updates, as restarting devices, verifying software versions, and reviewing configurations have not resolved the issue. We need your help to address this and get our brand strategies back to normal operation.
+
+Issue observed: Sudden login failures for all users. Possible cause: Database connection issue. Actions taken: Restarted server, verified firewall settings.
+
+Our marketing agency is facing difficulties with integrating various digital tools, which is impacting the efficiency of our campaigns. The issues might be due to software conflicts or un-updated applications. Despite our efforts, such as reinstalling the affected software and ensuring all systems are up-to-date, the problem still persists. We require your assistance to resolve this issue. We would greatly appreciate your guidance and support in helping us integrate these digital tools seamlessly to enhance our campaign efficiency.
+
+Data encryption on your Kingston DataTraveler has encountered a sudden issue, which may be related to outdated security software.
+
+Hello Support Team, I am contacting you to report a synchronization challenge with project schedules not aligning between teams. This issue emerged post a TensorFlow update and I believe it may not be compatible with our existing system. I've restarted the Hub and verified Adobe After Effects 2021 settings, but the issue still exists. I have also checked for software updates and confirmed that all team members are using the same software version, yet the issue hasn't been resolved. Could you please look into this and provide a resolution promptly? If you need any additional information from me, please let me know. I am available for further discussion if required. Thank you for your assistance. I look forward to your response soon.
+
+Dear Customer Support, I am reaching out to request the creation of a new data visualization dashboard for investment trends analysis and portfolio optimization. Our current dashboard is outdated and insufficient in providing the necessary insights. A new dashboard would aid in making informed investment decisions and improving portfolio optimization. The dashboard should feature interactive charts, real-time data updates, and customizable layouts. It should also be user-friendly and accessible on multiple devices. I believe this new dashboard would greatly enhance the experience for our users. Could you please provide a timeline for the implementation and any further details about the process? Thank you for your time and consideration. I look forward to your response.
+
+An unexpected connectivity issue has emerged, impacting the data analytics tools. It might have resulted from firmware conflicts or software updates. Steps taken included restarting devices and checking updates, but they were not successful.
+
+Hello Customer Support, I am facing difficulties with my project timelines that seem to be frozen and uneditable. This could be due to software incompatibility issues. Despite restarting, updating my browser, and clearing cache, the issue remains unresolved. I kindly request you to look into this and offer a timely solution. Please inform me if you require any further details from me to address this concern. Thank you for your support and assistance.
+
