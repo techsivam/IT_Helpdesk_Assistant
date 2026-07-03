@@ -39,8 +39,8 @@ def load_model_and_tokenizer(base_model, adapter_path, force_cpu):
     # Check if adapter exists locally or looks like a Hugging Face repo ID
     if os.path.exists(os.path.join(adapter_path, "adapter_config.json")):
         is_adapter_loaded = True
-    elif "/" in adapter_path and not os.path.exists(adapter_path):
-        # Assume it's a Hugging Face Hub repository identifier
+    elif "/" in adapter_path and not any(adapter_path.startswith(p) for p in ["adapters/", "../adapters/", "./adapters/"]) and not os.path.exists(adapter_path):
+        # Assume it's a Hugging Face Hub repository identifier (e.g. username/repo)
         is_adapter_loaded = True
 
     if use_unsloth:
