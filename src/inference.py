@@ -115,13 +115,19 @@ def generate_answer(model, tokenizer, backend, question, is_adapter_loaded):
     device = next(model.parameters()).device
     inputs = {k: v.to(device) for k, v in inputs.items()}
     
+    # Set up EOS token IDs to ensure generation stops on <|im_end|> (standard for Qwen ChatML formatting)
+    im_end_id = tokenizer.convert_tokens_to_ids("<|im_end|>")
+    eos_ids = [tokenizer.eos_token_id]
+    if isinstance(im_end_id, int) and im_end_id >= 0:
+        eos_ids.append(im_end_id)
+
     # Generate parameters
     generation_kwargs = {
         "max_new_tokens": 256,
         "temperature": 0.3,
         "top_p": 0.9,
         "do_sample": True,
-        "eos_token_id": tokenizer.eos_token_id,
+        "eos_token_id": eos_ids,
         "pad_token_id": tokenizer.pad_token_id if tokenizer.pad_token_id is not None else tokenizer.eos_token_id
     }
     

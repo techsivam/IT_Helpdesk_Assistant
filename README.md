@@ -110,6 +110,8 @@ pip install -r requirements.txt
 
 # 4. Query the assistant (make sure to close the double quotes!)
 python src/inference.py --question "How do I reset my expired password?"
+
+python src/inference.py --adapter_path "techsivam/dpo_lora" --question "How do I reset my expired password?"
 ```
 
 ---
