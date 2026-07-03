@@ -67,3 +67,20 @@ Below are the hyper-parameters configured in the notebooks:
 * **Optimizer**: `adamw_8bit` (Reduces memory consumption of optimizer states by using 8-bit quantization).
 * **Weight Decay**: `0.01` (Prevents overfitting during training).
 * **LR Scheduler**: `linear` for SFT/Non-Instruction, `cosine` for DPO.
+
+---
+
+## 4. Saving and Deployment (Hugging Face Hub Integration)
+
+To solve the stateless, temporary filesystem limitation of cloud environments like Google Colab, the models are saved using two complementary approaches:
+1. **Local Saving**: Model adapter weights and tokenizer configuration are saved locally to `adapters/` (or `../adapters/` relative to notebook workspace directories) using:
+   ```python
+   model.save_pretrained(save_path)
+   tokenizer.save_pretrained(save_path)
+   ```
+2. **Hugging Face Hub Saving (Private Repositories)**: To ensure adapters are not lost when Colab sessions disconnect or reset, weights are pushed directly to the Hugging Face Hub:
+   ```python
+   model.push_to_hub("username/adapter_name", private=True)
+   tokenizer.push_to_hub("username/adapter_name", private=True)
+   ```
+3. **Downstream Loading**: In subsequent notebooks and in the local inference script (`src/inference.py`), the model checks if the adapter directory exists locally. If not, it automatically pulls the PEFT adapter weights from the remote Hugging Face repository. This provides a stateless deployment pipeline where the GPU runs can be fully decoupled.
